@@ -1,0 +1,12 @@
+#+TITLE: we care about air - best of the month form creator
+Generate a typeform for the wcaa best of the month.
+
+* getting started
+Initialize =.env= with =TOKEN=<your typeform token>=
+
+Put the whatsapp images in the =data/= directory and call
+=FormCreator.make_form_month=:
+#+BEGIN_SRC python
+fc = FormCreator(data_dir="data/")
+form_link = fc.make_form_month(6)
+#+END_SRC
